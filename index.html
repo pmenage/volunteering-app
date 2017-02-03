@@ -14,9 +14,11 @@
     <body ng-app="app" ng-controller="MainCtrl as main">
         
         <!-- Header -->
+        
         <nav class="navbar navbar-volunteers">
             <div class="container">
                 
+                <!-- Menu title and icon bar -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#volunteer-navbar" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
@@ -27,6 +29,7 @@
                     <a class="navbar-brand" href="#">Haras de Jardy</a>
                 </div>
                 
+                <!-- Links in menu -->
                 <div class="collapse navbar-collapse" id="volunteer-navbar">
                     <ul class="nav navbar-nav">
                         <li><a href="#">The stables</a></li>
@@ -38,6 +41,7 @@
             </div>
         </nav>
     
+        <!-- Introduction to volunteering at this event -->
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
@@ -48,31 +52,47 @@
             </div>
         </div>
         
+        <!-- Event form -->
+        
+        <!-- Form background -->
         <div class="container-form">
+            
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
+                        
+                        <!-- Form title -->
                         <h2>Join us!</h2>
+                        
+                        <!-- Form description -->
                         <div>If you are interested in coming to help us at this event, please fill out the following form.</div>
+                        
+                        <!-- Form -->
                         <form class="form-horizontal" name="userForm" novalidate>
+                        
+                            <!-- First name -->
                             <div class="form-group form-no-margin" ng-class="{ 'has-error' : userForm.firstName.$invalid && !userForm.firstName.$pristine }">
                                 <label for="firstName" class="col-md-3 control-label">First name</label>
                                 <div class="col-md-9">
-                                    <input type="text" class="form-control" id="firstName" name="firstName" ng-model="main.firstName" required><br>
+                                    <input type="text" class="form-control" id="firstName" name="firstName" ng-model="main.firstName" ng-minlength="2" required><br>
                                     <div class="help-block" ng-messages="userForm.firstName.$error" ng-show="userForm.firstName.$touched">
                                         <div ng-messages-include="messages.html"></div>
                                     </div>
                                 </div>
                             </div>
+                            
+                            <!-- Last name -->
                             <div class="form-group form-no-margin" ng-class="{ 'has-error' : userForm.lastName.$invalid && !userForm.lastName.$pristine }">
                                 <label for="lastName" class="col-md-3 control-label">Last name</label>
                                 <div class="col-md-9">
-                                    <input type="text" class="form-control" id="lastName" name="lastName" ng-model="main.lastName" ng-minlength="3" required><br>
+                                    <input type="text" class="form-control" id="lastName" name="lastName" ng-model="main.lastName" ng-minlength="2" required><br>
                                     <div class="help-block" ng-messages="userForm.lastName.$error" ng-show="userForm.lastName.$touched">
                                         <div ng-messages-include="messages.html"></div>
                                     </div>
                                 </div>
                             </div>
+                            
+                            <!-- Email -->
                             <div class="form-group form-no-margin" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
                                 <label for="email" class="col-md-3 control-label">Email</label>
                                 <div class="col-md-9">
@@ -82,6 +102,8 @@
                                     </div>
                                 </div>
                             </div>
+                            
+                            <!-- Gender -->
                             <div class="form-group">
                                 <label class="col-md-3 control-label">Gender</label>
                                 <div class="col-md-9">
@@ -99,6 +121,8 @@
                                     </div>
                                 </div>
                             </div>    
+                            
+                            <!-- Skills -->
                             <div class="form-group">
                                 <label class="col-md-3 control-label">Skills</label>
                                 <div class="col-md-9">
@@ -123,6 +147,7 @@
                                 </div>
                             </div>
                             
+                            <!-- Other checkbox list -->
                             <div class="form-group">
                                 <label class="col-md-3 control-label">Other checkbox list</label>
                                 <div class="col-md-9">
@@ -147,12 +172,15 @@
                                 </div>
                             </div>
                             
+                            <!-- Additional information -->
                             <div class="form-group">
                                 <label for="info" class="col-md-3 control-label">Additional Information</label>
                                 <div class="col-md-9">
                                     <textarea class="form-control" id="info" rows="5"></textarea>
                                 </div>
                             </div>
+                            
+                            <!-- Submit button -->
                             <div id="center-button">
                                 <!-- Disables button if form is invalid -->
                                 <button type="submit" class="btn btn-submit">
@@ -164,24 +192,37 @@
             </div>
         </div>
         
+        <!-- Event video -->
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <h2>Find out what volunteers can do</h2>
+                    
+                    <!-- Video description -->
                     <p>Check out what you can do at a horseback riding event in this video. You will see how fun it is to volunteer at the Haras de Jardy. If you are interested, fill in the contact form above.</p>
+                    
+                    <!-- TODO : replace by video -->
                     <img height="300" class="img-responsive" src="http://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/41/2015/09/horse-shows-in-north-westjpg.jpg" />
+            
                 </div>
             </div>
         </div>
        
+       <!-- Footer -->
+       
+       <!-- Banner to add background style -->
         <div class="banner-grey">
+            
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        
+
+                    <!-- Google maps for location -->
                     <div class="col-sm-8">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.4980489619575!2d2.1502775152883893!3d48.82963797928474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67cf08e374065%3A0xfe1e11994d3fdac0!2sGolf+du+Haras+de+Jardy!5e0!3m2!1sen!2sfr!4v1485961316248" width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
+                    
+                    <!-- Address -->
                     <div class="col-sm-4 footer-info">
                         Address:<br />
                         Les Haras de Jardy<br />
@@ -189,6 +230,8 @@
                         33400 Talence<br />
                         01 45 92 03 42<br />
                     </div>
+                    
+                    <!-- Contact -->
                     <div class="col-sm-4 footer-info">
                         Contact information:<br />
                         Pauline Ménage<br />
