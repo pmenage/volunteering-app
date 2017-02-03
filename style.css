@@ -37,34 +37,40 @@ navbar-brand {
     background-color: #fff;
 }
 
-/* Pictures */
+/**** Pictures ****/
 
+/* Centers the images on the page */
 img, iframe {
     display: block;
     margin: 2em auto 2em auto;
 }
 
-/* Forms */
+/**** Forms ****/
 
+/* Puts a margin at the top of the form */
 .form-horizontal {
     margin-top: 2em;
 }
 
-.no-margin {
+/* Takes away the margins between input areas */
+.form-no-margin {
     margin-bottom: 0px;
 }
 
+/* Takes away Bootstrap curved angles */
 .form-control {
     border-radius: 0px;
 }
 
+/* Puts the form on a grey background */
 .container-form {
     background-color: #e6e6e6;
     box-shadow: 0 0 1em 0 #e6e6e6;
 }
 
-/* Buttons */
+/**** Buttons ****/
 
+/* Remodels the form button */
 .btn-submit {
     background: #bbb;
 	background-image: none;
@@ -77,6 +83,7 @@ img, iframe {
 	margin-bottom: 2em;
 }
 
+/* Centers the submit button on the page */
 #center-button {
     text-align: center;
 }
