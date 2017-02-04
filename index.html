@@ -104,21 +104,24 @@
                             </div>
                             
                             <!-- Gender -->
-                            <div class="form-group">
+                            <div class="form-group" ng-class="{ 'has-error' : userForm.gender.$invalid && !userForm.gender.$pristine }">
                                 <label class="col-md-3 control-label">Gender</label>
                                 <div class="col-md-9">
                                     <div class="radio">
                                         <label>
-                                            <input type="radio" name="gender" id="female" value="Female">
+                                            <input type="radio" name="gender" id="female" value="Female" ng-model="main.gender" required>
                                             Female
                                         </label>
                                     </div>
                                     <div class="radio">
                                         <label>
-                                            <input type="radio" name="gender" id="male" value="Male">
+                                            <input type="radio" name="gender" id="male" value="Male" ng-model="main.gender" required>
                                             Male
                                         </label>
                                     </div>
+                                </div>
+                                <div class="help-block" ng-messages="userForm.gender.$error" ng-show="userForm.gender.$touched">
+                                    <div ng-messages-include="messages.html"></div>
                                 </div>
                             </div>    
                             
@@ -186,7 +189,7 @@
                                 <button type="submit" class="btn btn-submit">
                                 Join now!</button>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
