@@ -13,9 +13,8 @@
     </head>
     
     <body ng-app="app" ng-controller="MainCtrl as main">
-        
+
         <!-- Header -->
-        
         <nav class="navbar navbar-default">
             <div class="container">
                 
@@ -42,7 +41,7 @@
                 
             </div>
         </nav>
-    
+
         <!-- Introduction to volunteering at this event -->
         <div class="container">
             <div class="row">
@@ -265,7 +264,10 @@
             </div>
         </div>
     
+        <!-- load jQuery - before Bootstrap -->
         <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+        
+        <!-- load bootstrap -->
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
         
         <!-- load angular -->
@@ -274,8 +276,7 @@
         <!-- load ngmessages -->
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-messages.js"></script>
         
-        
-        <!-- load custom app -->
+        <!-- load custom app - after AngularJS -->
         <script src="app.js" type="text/javascript"></script>
     
     </body>
