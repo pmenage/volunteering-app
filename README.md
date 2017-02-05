@@ -21,5 +21,6 @@ Libraries:
 
 ##Notes
 
-The values of the form are ready to be stored, as it can be seen in the console.
+The values of the form are ready to be stored, as it can be seen in the console. If they are invalid, an error message is shown in the console.
 All the pictures and videos are free for commercial use.
+This site works on the latest versions of Chrome, Firefox, Internet Explorer, and Microsoft Edge.
