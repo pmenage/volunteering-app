@@ -15,9 +15,10 @@ h1, h2 {
 
 /**** Custom Navbar ****/
 
+
 /* Color of navbar and menu title */
 .navbar-volunteers {
-    background: #222;
+    background: #5a80ba;
     border-bottom: 1px solid #ddd;
     color: #fff;
 }
@@ -27,9 +28,15 @@ h1, h2 {
     color: #fff;
 }
 
+.navbar-brand {
+    padding-top: .3em;
+}
+
 /* Color of links */
 .navbar-volunteers .nav li a {
+    font-size: 16px;
     color: #fff;
+    padding-left: 2em;
 }
 
 /* Margins for text */
@@ -47,7 +54,7 @@ navbar-brand {
 /**** Pictures ****/
 
 /* Centers the images on the page */
-img, iframe {
+.center-image {
     display: block;
     margin: 2em auto 2em auto;
 }
