@@ -3,6 +3,7 @@ angular
     .controller('MainCtrl', ['$scope', function($scope) {
         $scope.submit = function() {
             console.log("Submit");
+            $scope.userForm.submitted = true;
             if ($scope.userForm.$valid) {
                 console.log("First name: ", $scope.main.firstName);
                 console.log("Last name: ", $scope.main.lastName);
@@ -17,7 +18,3 @@ angular
             }
         };
     }]);
-
-//    .controller('MainCtrl', MainCtrl);
-    
-// function MainCtrl() {}
