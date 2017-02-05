@@ -48,7 +48,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <h1>Volunteer at horse shows</h1>
+                    <h1>Volunteer<br />at horse shows</h1>
                     <div>Come volunteer on Sundays at horseback riding events! The shows take place at the Bordeaux Equestrian Center, near Bordeaux, every Sunday from 9:00 am to 6:00 pm. There are many ways to volunteer, you can help at the restaurant, groom horses, or put up the obstacles. To participate, complete the form below during the week before the event.</div>
 
                     <!-- Carrousel -->                    
@@ -63,7 +63,7 @@
                       <!-- Wrapper for slides -->
                       <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                          <img src="images/horse-jumping.jpg" alt="Horse jumping">
+                          <img src="images/horse-jumping-1.jpg" alt="Horse jumping">
                         </div>
                         <div class="item">
                           <img src="images/horse-jumping-2.jpg" alt="Horse jumping">
@@ -107,10 +107,10 @@
                         <form class="form-horizontal" name="userForm" method="post" ng-submit="submit()" ng-controller="MainCtrl" novalidate>
                         
                             <!-- First name -->
-                            <div class="form-group form-no-margin" ng-class="{ 'has-error' : userForm.firstName.$invalid && !userForm.firstName.$pristine || userForm.$submitted }">
+                            <div class="form-group" ng-class="{ 'has-error' : userForm.firstName.$invalid && !userForm.firstName.$pristine || userForm.$submitted }">
                                 <label for="firstName" class="col-md-3 control-label">First name</label>
                                 <div class="col-md-9">
-                                    <input type="text" class="form-control" id="firstName" name="firstName" ng-model="main.firstName" ng-minlength="2" required><br>
+                                    <input type="text" class="form-control" id="firstName" name="firstName" ng-model="main.firstName" ng-minlength="2" required>
                                     <div class="help-block" ng-messages="userForm.firstName.$error" ng-if="userForm.firstName.$touched || userForm.$submitted">
                                         <div ng-messages-include="messages.html"></div>
                                     </div>
@@ -118,10 +118,10 @@
                             </div>
                             
                             <!-- Last name -->
-                            <div class="form-group form-no-margin" ng-class="{ 'has-error' : userForm.lastName.$invalid && !userForm.lastName.$pristine || userForm.$submitted }">
+                            <div class="form-group" ng-class="{ 'has-error' : userForm.lastName.$invalid && !userForm.lastName.$pristine || userForm.$submitted }">
                                 <label for="lastName" class="col-md-3 control-label">Last name</label>
                                 <div class="col-md-9">
-                                    <input type="text" class="form-control" id="lastName" name="lastName" ng-model="main.lastName" ng-minlength="2" required><br>
+                                    <input type="text" class="form-control" id="lastName" name="lastName" ng-model="main.lastName" ng-minlength="2" required>
                                     <div class="help-block" ng-messages="userForm.lastName.$error" ng-if="userForm.lastName.$touched || userForm.$submitted">
                                         <div ng-messages-include="messages.html"></div>
                                     </div>
@@ -129,10 +129,10 @@
                             </div>
                             
                             <!-- Username -->
-                            <div class="form-group form-no-margin" ng-class="{ 'has-error' : userForm.username.$invalid && !userForm.username.$pristine || userForm.$submitted }">
+                            <div class="form-group" ng-class="{ 'has-error' : userForm.username.$invalid && !userForm.username.$pristine || userForm.$submitted }">
                                 <label for="username" class="col-md-3 control-label">Username</label>
                                 <div class="col-md-9">
-                                    <input type="text" class="form-control" id="username" name="username" ng-model="main.username" ng-minlength="4" ng-maxlength="10" required><br>
+                                    <input type="text" class="form-control" id="username" name="username" ng-model="main.username" ng-minlength="4" ng-maxlength="10" required>
                                     <div class="help-block" ng-messages="userForm.username.$error" ng-show="userForm.username.$touched || userForm.$submitted">
                                         <div ng-messages-include="messages.html"></div>
                                     </div>
@@ -140,10 +140,10 @@
                             </div>
                             
                             <!-- Email -->
-                            <div class="form-group form-no-margin" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine || userForm.$submitted }">
+                            <div class="form-group" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine || userForm.$submitted }">
                                 <label for="email" class="col-md-3 control-label">Email</label>
                                 <div class="col-md-9">
-                                    <input type="email" class="form-control" id="email" name="email" ng-model="main.email" required><br>
+                                    <input type="email" class="form-control" id="email" name="email" ng-model="main.email" required>
                                     <div class="help-block" ng-messages="userForm.email.$error" ng-show="userForm.email.$touched || userForm.$submitted">
                                         <div ng-messages-include="messages.html"></div>
                                     </div>
@@ -239,7 +239,7 @@
                             <!-- Submit button -->
                             <div id="center-button">
                                 <!-- Disables button if form is invalid -->
-                                <button type="submit" class="btn btn-submit">
+                                <button type="submit" class="btn btn-primary btn-lg">
                                 Join now!</button>
                             </div>
                         </form>
