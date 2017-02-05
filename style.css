@@ -18,9 +18,10 @@ h1, h2 {
 
 /* Color of navbar and menu title */
 .navbar-volunteers {
-    background: #5a80ba;
+    background: #e3001b;
     border-bottom: 1px solid #ddd;
     color: #fff;
+    min-height: 80px;
 }
 
 /* Color of links */
@@ -29,14 +30,18 @@ h1, h2 {
 }
 
 .navbar-brand {
-    padding-top: .3em;
+    padding-top: .5em;
 }
 
 /* Color of links */
 .navbar-volunteers .nav li a {
-    font-size: 16px;
+    font-size: 20px;
     color: #fff;
     padding-left: 2em;
+    margin-top: 0.7em;
+    font-family: 'Alegreya Sans SC';
+    word-spacing: .3em;
+    font-weight: 600;
 }
 
 /* Margins for text */
