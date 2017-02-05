@@ -15,30 +15,15 @@ h1, h2 {
 
 /**** Custom Navbar ****/
 
-
-/* Color of navbar and menu title */
-.navbar-volunteers {
-    background: #e3001b;
-    border-bottom: 1px solid #ddd;
-    color: #fff;
-    min-height: 80px;
-}
-
-/* Color of links */
-.navbar-brand, .navbar-brand:hover, .navbar-brand:focus {
-    color: #fff;
-}
-
+/* Padding for logo */
 .navbar-brand {
     padding-top: .5em;
 }
 
-/* Color of links */
-.navbar-volunteers .nav li a {
+/* Link style */
+.navbar-default .nav li a {
     font-size: 20px;
-    color: #fff;
     padding-left: 2em;
-    margin-top: 0.7em;
     font-family: 'Alegreya Sans SC';
     word-spacing: .3em;
     font-weight: 600;
@@ -52,7 +37,7 @@ navbar-brand {
 }
 
 /* Color of icon bars on the right */
-.navbar-volunteers .navbar-toggle .icon-bar {
+.navbar-default .navbar-toggle .icon-bar {
     background-color: #fff;
 }
 
