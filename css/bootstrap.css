@@ -5,8 +5,8 @@
  */
 
 /*!
- * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=bd43fafd08f7f3c8889f1484c1c23a07)
- * Config saved to config.json and https://gist.github.com/bd43fafd08f7f3c8889f1484c1c23a07
+ * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=5d532e69efc94b1877a0cead1d7734b5)
+ * Config saved to config.json and https://gist.github.com/5d532e69efc94b1877a0cead1d7734b5
  */
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -4499,8 +4499,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #e3001b;
-  border-color: #c20017;
+  background-color: #c0392b;
+  border-color: #a53125;
 }
 .navbar-default .navbar-brand {
   color: #ffffff;
@@ -4525,7 +4525,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #ffffff;
-  background-color: #c20017;
+  background-color: #a53125;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -4545,12 +4545,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #c20017;
+  border-color: #a53125;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #c20017;
+  background-color: #a53125;
   color: #ffffff;
 }
 @media (max-width: 767px) {
@@ -4566,7 +4566,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #ffffff;
-    background-color: #c20017;
+    background-color: #a53125;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
