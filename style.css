@@ -16,6 +16,11 @@ h1:first-line {
 /* Styles for desktop */
 @media(min-width:768px) {
     
+    .center {
+        width: 768px;
+        margin: 0 auto;
+    }
+    
     /* Larger font and padding on desktop */
     h1 {
         font-size: 64px;
