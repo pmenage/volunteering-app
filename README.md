@@ -6,7 +6,7 @@ This is a mobile responsive page for people who wish to volunteer at an event. I
 
 ## Running
 
-This is a static website, there is no build step. To see the page, open the [index.html](https://pmenage.github.io/volunteering-app/) file in a browser.
+This is a static website, there is no build step. To see the page, open the <a href="https://pmenage.github.io/volunteering-app/" target="_blank">index.html</a> file in a browser.
 
 ## Frameworks and libraries
 
